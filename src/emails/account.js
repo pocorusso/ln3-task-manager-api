@@ -20,10 +20,6 @@ const sendWelcomeEmail = (email, name) => {
         from: 'mochipoojunk@gmail.com',
         subject: 'Thanks for joining!',
         text: `Welcome to the app, ${name}. let me know how you get along with the app.`
-    }).then(() => {
-        console.log('Email sent')
-    }).catch((error) => {
-        console.error(error)
     })
 }
 
@@ -33,10 +29,6 @@ const sendByeEmail = (email, name) => {
         from: 'mochipoojunk@gmail.com',
         subject: 'Sorry to see you go!',
         text: `Sorry to see you go, ${name}.`
-    }).then(() => {
-        console.log('Email sent')
-    }).catch((error) => {
-        console.error(error)
     })
 }
 
